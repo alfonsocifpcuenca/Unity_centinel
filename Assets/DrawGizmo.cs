@@ -8,7 +8,7 @@ public class DrawGizmo : MonoBehaviour
     {     
         Vector3 direction = target.position - transform.position;
         Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, direction);
+        Gizmos.DrawRay(transform.position, direction.normalized * 4f);
     }
 
 }
